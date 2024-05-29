@@ -13,6 +13,8 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm install'
+                sh 'node -v'
+                sh 'npm -v'
             }
         }
         stage('Test') {
