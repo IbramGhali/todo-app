@@ -1,6 +1,6 @@
 import chai from 'chai';
 import chaiHttp from 'chai-http';
-import app from '../src/app';
+import app from '../src/app.js'; // Ensure the file extension .js is included
 
 chai.use(chaiHttp);
 const { expect } = chai;
