@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        nodejs 'NodeJS_14' // Ensure this matches the name you used in the Jenkins configuration
+        nodejs 'NodeJS_LTS' // Ensure this matches the name you used in the Jenkins configuration
     }
     
     stages {
@@ -13,8 +13,6 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm install'
-                sh 'node -v'
-                sh 'npm -v'
             }
         }
         stage('Test') {
