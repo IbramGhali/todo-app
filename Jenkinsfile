@@ -15,11 +15,11 @@ pipeline {
                 sh 'npm install'
             }
         }
-        stage('Fix Permissions') {
+        stage('Fix Permissions') { // Added stage to fix permissions
             steps {
                 sh 'chmod +x node_modules/.bin/mocha'
             }
-        }
+        
         stage('Test') {
             steps {
                 sh 'npm test'

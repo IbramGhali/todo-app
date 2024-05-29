@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "node_modules/.bin/mocha 'tests/**/*.js'"
+    "test": "mocha 'tests/**/*.js'"
   },
   "keywords": [],
   "author": "",
