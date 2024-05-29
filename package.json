@@ -8,7 +8,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "mocha 'tests/**/*.js'"
+    "test": "mocha 'tests/**/*.mjs'"
   },
   "keywords": [],
   "author": "",

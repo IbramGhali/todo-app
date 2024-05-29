@@ -1,9 +1,9 @@
-import chai from 'chai';
+import { expect } from 'chai';
 import chaiHttp from 'chai-http';
-import app from '../src/app.js';
+import * as chai from 'chai';
+import app from '../src/app.mjs';
 
 chai.use(chaiHttp);
-const { expect } = chai;
 
 describe('To-Do List API', () => {
     it('should get all todos', (done) => {
