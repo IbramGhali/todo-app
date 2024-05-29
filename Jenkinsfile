@@ -12,7 +12,6 @@ pipeline {
         }
         stage('Build') {
             steps {
-                git 'https://github.com/IbramGhali/todo-app.git'
                 sh 'npm install'
             }
         }
