@@ -3,7 +3,13 @@ pipeline {
     tools {
         nodejs 'NodeJS_14' // Ensure this matches the name you used in the Jenkins configuration
     }
+    
     stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/IbramGhali/todo-app.git'
+            }
+        }
         stage('Build') {
             steps {
                 git 'https://github.com/IbramGhali/todo-app.git'
