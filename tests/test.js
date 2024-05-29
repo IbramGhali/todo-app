@@ -1,6 +1,6 @@
-const chai = require('chai');
-const chaiHttp = require('chai-http');
-const app = require('../src/app'); // Use CommonJS require
+import chai from 'chai';
+import chaiHttp from 'chai-http';
+import app from '../src/app.js'; // Ensure the file extension .js is included
 
 chai.use(chaiHttp);
 const { expect } = chai;
